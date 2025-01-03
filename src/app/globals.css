@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .flex-center{@apply items-center justify-center;}
+  .h-inherit {height: inherit;}
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  .container {
+    max-width: 1920px;
+    padding-inline: clamp(78px,5vw,24px);
+    margin-inline: auto;
+  }
+}
