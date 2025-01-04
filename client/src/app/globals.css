@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .wrapper{@apply grid min-h-full py-7 px-16 grid-rows-[minmax(64px,auto)_1fr_minmax(64px,auto)];}
+  .main{@apply grid grid-cols-[196px_1fr_196px] gap-4}
+  .frame{@apply absolute object-contain pointer-events-none;}
+  .flex-center{@apply items-center justify-center;}
+  .h-inherit {height: inherit;}
+  .gradient {
+    background: rgb(232,74,74);
+    background: radial-gradient(circle, rgba(232,74,74,1) 0%, rgba(232,74,74,0) 64%);
+  }
+}
+
+@layer utilities {
+  .text-balance {@apply text-balance;}
+}
+
+@layer base {
+  .container {@apply mx-auto max-w-FHD;}
+}
